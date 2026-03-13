@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    string s, t;
+    cin >> s >> t;
+
+    int pos = 0;   // starting at first stone (0-based index)
+
+    for(int i = 0; i < t.length(); i++){
+        if(s[pos] == t[i]){
+            pos++;
+        }
+    }
+
+    cout << pos + 1;
+
+    return 0;
+}
